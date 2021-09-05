@@ -37,6 +37,10 @@ h2 {
     text-align: center;
 }
 
+.profile img {
+    width: 100px;
+    height: 100px;
+}
 .social {
     display: flex;
     justify-content: space-around;
