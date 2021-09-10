@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("img/background.png");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+}
+
+.logo-site {
+    display: block;
+    margin: 100px auto 15px auto;
+}
+
+.title1 {
+    display: block;
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.title2 {
+    display: block;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+}
+
+.title3 {
+    display: block;
+    color: white;
+    margin: 30px auto;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.input {
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+    
+}
+
+.check-input {
+    color: white;
+    margin-left: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    
+    background: rgb(23, 65, 189);
+    color: white;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+}
