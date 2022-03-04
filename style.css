@@ -7,11 +7,17 @@
 
 
 
-body {
+body {  
     width: 100%;
     font-family: 'Poppins', sans-serif;
 }
-
+header {
+  min-height: 191px;
+}
+.container {
+  width: 100%;
+  position: fixed;
+}
 .logo {
   display: flex;
   justify-content: space-between;
