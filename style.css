@@ -52,12 +52,25 @@ header {
 .itemMenu {
   padding:0;
   margin: 0px 10px 5px 5px;
+  max-width: 140px;
+  
 }
-
+.itemMenu span:hover  {
+ 
+  border-bottom: 1px solid black;
+}
+.itemMenu a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  
+}
 .imgMenu {
-  margin: 15px 0 0 20px;
+  display: block;
+  margin: 15px 0 0 30px;
 
 }
+
 .menulist {
   display:flex;
   
@@ -73,7 +86,12 @@ header {
 
 
 
-
+.medidor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap ;
+  margin: 15px;
+}
 
 .conteudo {
   display: flex;
@@ -82,6 +100,7 @@ header {
   margin: 0 20px 0 20px;
 }
 .conversor {
+    margin: 15px;
     width:352px;
     min-height: 243px;
     border-radius: 20px;
