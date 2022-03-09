@@ -84,23 +84,45 @@ header {
 
 
 
-
-
-.medidor {
+.conteudo {
   display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.conteudo .geral div{
+  display: none;
+}
+
+.conteudo .geral div.mostrar{
+  display: flex;
+}
+
+.medidas {
+  background-color:white;
+  
+  justify-content: space-between;
+  flex-wrap: wrap ;
+  margin: 0px;
+}
+.moedas {
+  background-color:white;
+  
+  justify-content: space-between;
+  flex-wrap: wrap ;
+  margin: 15px;
+}
+.tempo {
+  background-color:white;
+  
   justify-content: space-between;
   flex-wrap: wrap ;
   margin: 15px;
 }
 
-.conteudo {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin: 0 20px 0 20px;
-}
 .conversor {
-    margin: 15px;
+    margin: 0px;
     width:352px;
     min-height: 243px;
     border-radius: 20px;
@@ -157,35 +179,35 @@ header {
   
   
   @media screen and (max-width:375px){
-    .conteudo {
+    .medidas {
       flex-flow: nowrap;
       align-items: center;
       flex-direction: column;
     }
   }
   @media screen and (max-width:390px){
-    .conteudo {
+    .medidas {
       flex-flow: nowrap;
       align-items: center;
       flex-direction: column;
     }
   }
   @media screen and (max-width:414px){
-    .conteudo {
+    .medidas {
       flex-flow: nowrap;
       align-items: center;
       flex-direction: column;
     }
   }
   @media screen and (max-width:820px){
-    .conteudo {
+    .medidas {
       flex-flow: nowrap;
       align-items: flex-start;
       flex-direction: column;
     }
   }
   @media screen and (max-width:540px){
-    .conteudo {
+    .medidas {
       align-items: center;
       flex-direction: column;
     }
@@ -196,7 +218,7 @@ header {
     .conversor {
       width:260px;
       min-height: 203px;}
-    .conteudo {
+    .medidas {
       align-items: center;
       flex-direction: column;
     }

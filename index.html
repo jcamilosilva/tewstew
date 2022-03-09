@@ -35,22 +35,22 @@
         <div class="menu">
           <nav class="navmenu">
             <ul class="menulist">
-              <li class="itemMenu">
-                
-                  <img class="imgMenu" src="img/icone-medida.png" alt="Imagem Converter Medidas">
-                  <span><a href="#">Converter Medidas</a></span>
-                
-              </li>
               <li>
                 <div class="itemMenu">
-                  <img class="imgMenu" src="img/icone-medida.png" alt="Imagem Converter Moedas">
-                  <span><a href="#">Converter Moedas</a></span>
+                  <img class="imgMenu" src="img/icone-medida.png" alt="Imagem Converter Medidas">
+                  <span class="opcao"><a id="1" href="#">Converter Medidas</a></span>
                 </div>
               </li>
               <li>
                 <div class="itemMenu">
-                  <img class="imgMenu" src="img/icone-medida.png" alt="Imagem Converter Tempo">
-                  <span><a href="#">Converter Tempo</a></span>
+                  <img class="imgMenu" src="img/coin.png" alt="Imagem Converter Moedas">
+                  <span class="opcao"><a id="2" href="#">Converter Moedas</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="itemMenu">
+                  <img class="imgMenu" src="img/Timer.png" alt="Imagem Converter Tempo">
+                  <span class="opcao"><a id="3"  href="#">Converter Tempo</a></span>
                 </div>
               </li>
             </ul>
@@ -62,358 +62,300 @@
     </header>
     <!-- fim cabeçalho -->
     <main>
-        <div class="conteudo">
-          <section class="medidor">
-            <article class="conversor">
-              <h2>Comprimento</h2>
-              <div class="medida">
+        <section class="conteudo">
+          <div class="geral">
+            <div data-id="1" class="medidas mostrar">
+              <article class="conversor">
+                <h2>Comprimento</h2>
                 <label>Valor</label>
-                <input id="entrada"type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select id="select1">
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select id="select2">
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p id="resultado"></p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Comprimento</h2>
-              <div class="medida">
+                  <input id="entrada"type="number" value="1">
+                  <label>De</label>
+                  <select id="select1">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                
+                
+                  <label>Para</label>
+                  <select id="select2">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                
+                <p id="resultado"></p> 
+              </article>
+              <article class="conversor">
+                <h2>Temperatura</h2>
                 <label>Valor</label>
                 <input type="number" value="1">
-              </div>
-              <div class="medida">
                 <label>De</label>
                 <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
                 </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>10</p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Temperatura</h2>
-              <div class="medida">
+                
+                <div class="medida">
+                  <label>Para</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p>1.609344</p> 
+              </article>
+              <article class="conversor">
+                <h2>Área</h2>
+                <div class="medida">
                 <label>Valor</label>
                 <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>1.609344</p> 
-            </article>
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p>10</p> 
+              </article>
+              <article class="conversor">
+                <h2>Velocidade</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p>1.609344</p> 
+              </article>
+              <article class="conversor">
+                <h2>Volume</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p>10</p> 
+              </article>
+              <article class="conversor">
+                <h2>Pressão</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p>1.609344</p> 
+              </article>
+            </div>
           
-
+            <div data-id="2" class="moedas">
+              <article class="conversor">
+                <h2>Cotação</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select>
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p>1.609344</p> 
+              </article>
+            </div>
           
-            <article class="conversor">
-              <h2>Comprimento</h2>
-              <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>10</p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Comprimento</h2>
-              <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>10</p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Temperatura</h2>
-              <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>1.609344</p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Comprimento</h2>
-              <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>10</p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Comprimento</h2>
-              <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>10</p> 
-            </article>
-          
-
-          
-            <article class="conversor">
-              <h2>Temperatura</h2>
-              <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-              </div>
-              <div class="medida">
-                <label>De</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select>
-              </div>
-              <div class="medida">
-                <label>Para</label>
-                <select>
-                  <option value="mm">Milímetro (mm)</option>
-                  <option value="cm">Centímetro (cm)</option>
-                  <option value="m">Metro (m)</option>
-                  <option value="km">Quilômetro (km)</option>
-                  <option value="in">Polegada (in)</option>
-                  <option value="yd">Jarda (yd)</option>
-                  <option value="ft-us">Pé - Us (ft-us)</option>
-                  <option value="ft">Pé (ft)</option>
-                  <option value="mi">Milha (mi)</option>
-                </select> 
-              </div>
-              <p>1.609344</p> 
-            </article>
-          </section>
-        </div>
+            <div data-id="3" class="tempo">
+              <article class="conversor">
+                <h2>Converter tempo</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input id="entrada"type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select id="select1">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select id="select2">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p id="resultado"></p> 
+              </article>
+            </div>
+          </div>
+        </section>
       </main>
       <footer> 
          <div class="rodape">
