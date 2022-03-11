@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Conversor de Medidas Online</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -359,40 +360,32 @@
 
             <div data-id="4" class="eletrica">
               <article class="conversor">
-                <h2>Elétrica</h2>
-                <div class="medida">
+                <h2>Energia</h2>
+                
                   <label>Valor</label>
-                  <input id="entrada"type="number" value="1">
-                </div>
-                <div class="medida">
+                  <input id="entradaWatt"type="number" value="1">
                   <label>De</label>
-                  <select id="select1">
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
+                  <select id="select1Watt">
+                    <option value="Wh">Watt-hora (Wh)</option>
+                    <option value="mWh">Miliwatt-hora (mWh)</option>
+                    <option value="kWh">Quilowatt-hora (kWh)</option>
+                    <option value="MWh">Megawatt-hora (MWh)</option>
+                    <option value="GWh">Gigawatt-hora (GWh)</option>
+                    <option value="J">Joule (J)</option>
+                    <option value="kJ">Quilojoule (kJ)</option>
                   </select>
-                </div>
-                <div class="medida">
                   <label>Para</label>
-                  <select id="select2">
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
+                  <select id="select2Watt">
+                    <option value="Wh">Watt-hora (Wh)</option>
+                    <option value="mWh">Miliwatt-hora (mWh)</option>
+                    <option value="kWh">Quilowatt-hora (kWh)</option>
+                    <option value="MWh">Megawatt-hora (MWh)</option>
+                    <option value="GWh">Gigawatt-hora (GWh)</option>
+                    <option value="J">Joule (J)</option>
+                    <option value="kJ">Quilojoule (kJ)</option>
                   </select> 
-                </div>
-                <p id="resultado"></p> 
+                
+                <p id="resultadoWatt"></p> 
               </article>
             </div>
 
@@ -458,6 +451,7 @@
             
       </div>
       </footer>
+      <script src="js/watt.js"></script>
       <script src="js/menu.js"></script>
       <script src="js/comprimento.js"></script>
       <script src="js/temperatura.js"></script>
