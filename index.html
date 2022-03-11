@@ -80,9 +80,9 @@
               <article class="conversor">
                 <h2>Comprimento</h2>
                 <label>Valor</label>
-                  <input id="entradaMedidas"type="number" value="1">
+                  <input id="entradaComprimento"type="number" value="1">
                   <label>De</label>
-                  <select id="select1Medidas">
+                  <select id="select1Comprimento">
                     <option value="mm">Milímetro (mm)</option>
                     <option value="cm">Centímetro (cm)</option>
                     <option value="m">Metro (m)</option>
@@ -96,7 +96,7 @@
                 
                 
                   <label>Para</label>
-                  <select id="select2Medidas">
+                  <select id="select2Comprimento">
                     <option value="mm">Milímetro (mm)</option>
                     <option value="cm">Centímetro (cm)</option>
                     <option value="m">Metro (m)</option>
@@ -108,14 +108,14 @@
                     <option value="mi">Milha (mi)</option>
                   </select> 
                 
-                <p id="resultadoMedidas"></p> 
+                <p id="resultadoComprimento"></p> 
               </article>
               <article class="conversor">
                 <h2>Temperatura</h2>
                 <label>Valor</label>
-                <input id="entradaMoedas" type="number" value="1">
+                <input id="entradaTemperatura" type="number" value="1">
                 <label>De</label>
-                <select id="select1Moedas">
+                <select id="select1Temperatura">
                     <option value="C">Celcius (C)</option>
                     <option value="K">Kelvin (K)</option>
                     <option value="F">Fahrenheit (F)</option>
@@ -124,16 +124,16 @@
                 
                 
                   <label>Para</label>
-                  <select id="select2Moedas">
+                  <select id="select2Temperatura">
                     <option value="C">Celcius (C)</option>
                     <option value="K">Kelvin (K)</option>
                     <option value="F">Fahrenheit (F)</option>
                     <option value="R">Rankine (R)</option>
                   </select> 
                 
-                <p id="resultadoMoedas"></p> 
+                <p id="resultadoTemperatura"></p> 
               </article>
-              <article class="conversor">
+              <!-- <article class="conversor">
                 <h2>Área</h2>
                 <div class="medida">
                 <label>Valor</label>
@@ -276,10 +276,10 @@
                   </select> 
                 </div>
                 <p>1.609344</p> 
-              </article>
+              </article> -->
             </div>
           
-            <div data-id="2" class="moedas">
+            <div data-id="2" class="medidas">
               <article class="conversor">
                 <h2>Cotação</h2>
                 <div class="medida">
@@ -436,7 +436,7 @@
             </div>
 
             <div data-id="6" class="ajudar">
-              <article class="conversor">
+              <article class="caixaajuda">
                 <span class="ajuda">Ajude-nos com qualquer valor via PIX , 
                   para que possamos manter e melhorar cada vez mais a feramenta!</span>
                   <img src="img/fa6-brands_pix.png" alt="imagem pix">
@@ -458,8 +458,8 @@
             
       </div>
       </footer>
-      <script src="menu.js"></script>
-      <script src="medidas.js"></script>
-      <script src="moedas.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/comprimento.js"></script>
+      <script src="js/temperatura.js"></script>
 </body>
 </html>

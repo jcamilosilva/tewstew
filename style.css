@@ -190,11 +190,36 @@ header {
     font-size:20px;
     font-weight: bold;
   }
-  .conversor span a {
+  .caixaajuda {
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    margin: 5px 0 0 0 ;
+    width:352px;
+    min-height: 243px;
+    border-radius: 20px;
+    background-color: #ebebeb;
+    
+  }
+  .caixaajuda span a {
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
     color: #000;
+  }
+  
+  .ajuda  {
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+  }
+  .caixaajuda img {
+    width: 50px;
+    height: 50px;
+    
   }
   .rodape {
     display: flex;
