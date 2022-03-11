@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -23,14 +22,9 @@
             <img src="img/logo.png" alt="Logo do Site" >
             <h2>Conversor de medidas</h2>
           </figure>
-          <!-- fim logo -->
-
-          <!-- Icone de ajude-nos -->
-          <figure class="imgGift">
-            <img src="img/Gift.png" alt="Colabore Conosco!">
-          </figure>
-          <!-- fim ajude-nos -->
         </div>
+        <!-- fim logo -->
+
         <!-- inicio menu -->
         <div class="menu">
           <nav class="navmenu">
@@ -38,19 +32,37 @@
               <li>
                 <div class="itemMenu">
                   <img class="imgMenu" src="img/icone-medida.png" alt="Imagem Converter Medidas">
-                  <span class="opcao"><a id="1" href="#">Converter Medidas</a></span>
+                  <span class="opcao"><a id="1" href="#">Medidas</a></span>
                 </div>
               </li>
               <li>
                 <div class="itemMenu">
                   <img class="imgMenu" src="img/coin.png" alt="Imagem Converter Moedas">
-                  <span class="opcao"><a id="2" href="#">Converter Moedas</a></span>
+                  <span class="opcao"><a id="2" href="#">Moedas</a></span>
                 </div>
               </li>
               <li>
                 <div class="itemMenu">
                   <img class="imgMenu" src="img/Timer.png" alt="Imagem Converter Tempo">
-                  <span class="opcao"><a id="3"  href="#">Converter Tempo</a></span>
+                  <span class="opcao"><a id="3"  href="#">Tempo</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="itemMenu">
+                  <img class="imgMenu" src="img/Lightning Bolt.png" alt="Imagem Converter Medidas">
+                  <span class="opcao"><a id="4" href="#">Elétrica</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="itemMenu">
+                  <img class="imgMenu" src="img/Integrated Circuit.png" alt="Imagem Converter Medidas">
+                  <span class="opcao"><a id="5" href="#">Eletrônica</a></span>
+                </div>
+              </li>
+              <li>
+                <div class="itemMenu">
+                  <img class="imgMenu" src="img/Gift.png" alt="Imagem Converter Medidas">
+                  <span class="opcao"><a id="6" href="#">ajude-nos</a></span>
                 </div>
               </li>
             </ul>
@@ -68,9 +80,9 @@
               <article class="conversor">
                 <h2>Comprimento</h2>
                 <label>Valor</label>
-                  <input id="entrada"type="number" value="1">
+                  <input id="entradaMedidas"type="number" value="1">
                   <label>De</label>
-                  <select id="select1">
+                  <select id="select1Medidas">
                     <option value="mm">Milímetro (mm)</option>
                     <option value="cm">Centímetro (cm)</option>
                     <option value="m">Metro (m)</option>
@@ -84,7 +96,7 @@
                 
                 
                   <label>Para</label>
-                  <select id="select2">
+                  <select id="select2Medidas">
                     <option value="mm">Milímetro (mm)</option>
                     <option value="cm">Centímetro (cm)</option>
                     <option value="m">Metro (m)</option>
@@ -96,40 +108,30 @@
                     <option value="mi">Milha (mi)</option>
                   </select> 
                 
-                <p id="resultado"></p> 
+                <p id="resultadoMedidas"></p> 
               </article>
               <article class="conversor">
                 <h2>Temperatura</h2>
                 <label>Valor</label>
-                <input type="number" value="1">
+                <input id="entradaMoedas" type="number" value="1">
                 <label>De</label>
-                <select>
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
+                <select id="select1Moedas">
+                    <option value="C">Celcius (C)</option>
+                    <option value="K">Kelvin (K)</option>
+                    <option value="F">Fahrenheit (F)</option>
+                    <option value="R">Rankine (R)</option>
                 </select>
                 
-                <div class="medida">
+                
                   <label>Para</label>
-                  <select>
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
+                  <select id="select2Moedas">
+                    <option value="C">Celcius (C)</option>
+                    <option value="K">Kelvin (K)</option>
+                    <option value="F">Fahrenheit (F)</option>
+                    <option value="R">Rankine (R)</option>
                   </select> 
-                </div>
-                <p>1.609344</p> 
+                
+                <p id="resultadoMoedas"></p> 
               </article>
               <article class="conversor">
                 <h2>Área</h2>
@@ -354,6 +356,93 @@
                 <p id="resultado"></p> 
               </article>
             </div>
+
+            <div data-id="4" class="eletrica">
+              <article class="conversor">
+                <h2>Elétrica</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input id="entrada"type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select id="select1">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select id="select2">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p id="resultado"></p> 
+              </article>
+            </div>
+
+            <div data-id="5" class="eletronica">
+              <article class="conversor">
+                <h2>Eletrônica</h2>
+                <div class="medida">
+                  <label>Valor</label>
+                  <input id="entrada"type="number" value="1">
+                </div>
+                <div class="medida">
+                  <label>De</label>
+                  <select id="select1">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select>
+                </div>
+                <div class="medida">
+                  <label>Para</label>
+                  <select id="select2">
+                    <option value="mm">Milímetro (mm)</option>
+                    <option value="cm">Centímetro (cm)</option>
+                    <option value="m">Metro (m)</option>
+                    <option value="km">Quilômetro (km)</option>
+                    <option value="in">Polegada (in)</option>
+                    <option value="yd">Jarda (yd)</option>
+                    <option value="ft-us">Pé - Us (ft-us)</option>
+                    <option value="ft">Pé (ft)</option>
+                    <option value="mi">Milha (mi)</option>
+                  </select> 
+                </div>
+                <p id="resultado"></p> 
+              </article>
+            </div>
+
+            <div data-id="6" class="ajudar">
+              <article class="conversor">
+                <span class="ajuda">Ajude-nos com qualquer valor via PIX , 
+                  para que possamos manter e melhorar cada vez mais a feramenta!</span>
+                  <img src="img/fa6-brands_pix.png" alt="imagem pix">
+                <span><a href="https://picpay.me/jcamilo.silva" target="blank">jcamilo.silva</a></span> 
+              </article>
+            </div>
           </div>
         </section>
       </main>
@@ -370,6 +459,7 @@
       </div>
       </footer>
       <script src="menu.js"></script>
-      <script src="conversores.js"></script>
+      <script src="medidas.js"></script>
+      <script src="moedas.js"></script>
 </body>
 </html>

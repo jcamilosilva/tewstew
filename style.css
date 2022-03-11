@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   box-sizing: border-box;
+  list-style: none;
 }
 
 
@@ -12,6 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 header {
+  
   min-height: 191px;
 }
 .container {
@@ -22,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  width: 100%;
+  
   min-height: 128px;
   background-color: #6f6f6f;
 }
@@ -35,6 +37,7 @@ header {
 }
 .logo .imgGift img {
   margin-right: 15px;
+  cursor: pointer;
 }
 
 
@@ -67,12 +70,16 @@ header {
 }
 .imgMenu {
   display: block;
-  margin: 15px 0 0 30px;
+  margin: auto;
 
 }
 
 .menulist {
   display:flex;
+  padding-top: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
   
 }
 .menulist li span  {
@@ -81,14 +88,25 @@ header {
   font-size: 10px;
   font-weight: bold;
 }
+.ajuda {
+  font-size: 10px;
+}
 
-
+/* CONTEUDO */
 
 .conteudo {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  
+}
+
+.geral{
+  display: flex;
   justify-content: space-between;
-  margin: 0;
+  max-width: 850px;
+  
 }
 
 .conteudo .geral div{
@@ -101,35 +119,38 @@ header {
 
 .medidas {
   background-color:white;
-  
+  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap ;
-  margin: 0px;
+  flex-wrap: wrap;
+
+  margin: 161px 0px px 0px;
+}
+.conversor {
+  margin: 5px 0 0 0 ;
+  width:352px;
+  min-height: 243px;
+  border-radius: 20px;
+  background-color: #ebebeb;
+  
 }
 .moedas {
   background-color:white;
   
   justify-content: space-between;
-  flex-wrap: wrap ;
+  
   margin: 15px;
 }
 .tempo {
   background-color:white;
-  
+  min-width: 352px;
   justify-content: space-between;
-  flex-wrap: wrap ;
+  
   margin: 15px;
 }
 
-.conversor {
-    margin: 0px;
-    width:352px;
-    min-height: 243px;
-    border-radius: 20px;
-    background-color: #ebebeb;
-    
-  }
+
   .conversor h2{
+    display: block;
     margin: 10px;
     border-bottom: 1px solid #000;
     padding-bottom: 5px;
@@ -137,26 +158,43 @@ header {
     line-height: 27px;
     font-weight: 400;
   }
-  .conversor .medida label{
+  .conversor label{
+    display: block;
+    margin-left:20%;
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
     color: #000;
   }
-  .medida {
-    padding:10px;
-    display:flex;
-    justify-content: space-between;
+  
+  
+  .conversor input{
+    width: 210px;
+    height: 25px;
+    margin-left: 20%;
+  }
+  .conversor select{
+    width: 210px;
+    height: 25px;
+    margin-left: 20%;
     
   }
-  
-  .medida input{
-    width: 110px;
+  .conversor option{
+    width: 210px;
+    height: 25px;
+    margin-left: 20%;
+    
   }
   .conversor p{
-    margin: 0px 120px;
+    margin-left:20%;
     font-size:20px;
     font-weight: bold;
+  }
+  .conversor span a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
   }
   .rodape {
     display: flex;
