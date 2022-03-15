@@ -215,7 +215,11 @@ header {
     font-weight: bold;
     color: #000;
   }
-  
+  .caixaajuda .tutorial {
+    margin-top:15px;
+    padding:10px;
+    border-top: 1px solid silver;
+  }
   .ajuda  {
     margin: 5px 0;
     padding: 10px;
@@ -229,20 +233,26 @@ header {
     
   }
   .imgTuto {
-    width: 100px;
+    width: 90%;
+    height: 90%;
   }
   .rodape {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-height: 55px;
+    height: 55px;
     /* margin-top: 20px; */
-    background-color: #33ed4e;
+    background-color: #194e1d;
   }
   .rodape span {
     margin: auto;
     font-size: 12px;
     font-weight: bold;
+    
+  }
+  .rodape span a {
+    color: black;
+    
   }
   .git {
     display: flex;
