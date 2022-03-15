@@ -227,9 +227,9 @@ header {
     height: 50px;
     
   }
-  .imgTuto {
-    width: 90%;
-    height: 90%;
+  .caixaajuda .imgTuto {
+    width: 50%;
+    height: 50%;
   }
   .rodape {
     display: flex;
