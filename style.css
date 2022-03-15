@@ -136,11 +136,11 @@ header {
   
 }
 .moedas {
-  background-color:white;
-  
+  background-color:#194e1d;
+  align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   
-  margin: 15px;
 }
 .tempo {
   background-color:#194e1d;
@@ -257,6 +257,10 @@ header {
   
   
   @media screen and (max-width:375px){
+    .logo .textoLogo h2 {
+      font-size: 1.5em;
+      
+    }
     .logo .imgLogo h2 {
       
       margin:0px 0 0px 15px;
@@ -268,6 +272,10 @@ header {
     }
   }
   @media screen and (max-width:390px){
+    .logo .textoLogo h2 {
+      font-size: 1.5em;
+      
+    }
     .logo .imgLogo h2 {
       
       margin:0px 0 0px 15px;
@@ -279,6 +287,10 @@ header {
     }
   }
   @media screen and (max-width:414px){
+    .logo .textoLogo h2 {
+      font-size: 1.5em;
+      
+    }
     .logo .imgLogo h2 {
       
       margin:0px 0 0px 15px;
@@ -290,6 +302,10 @@ header {
     }
   }
   @media screen and (max-width:820px){
+    .logo .textoLogo h2 {
+      font-size: 1.5em;
+      
+    }
     .logo .imgLogo h2 {
       
       margin:0px 0 0px 15px;
@@ -301,6 +317,10 @@ header {
     }
   }
   @media screen and (max-width:540px){
+    .logo .textoLogo h2 {
+      font-size: 1.5em;
+      
+    }
     .logo .imgLogo h2 {
       
       margin:0px 0 0px 15px;
@@ -313,6 +333,10 @@ header {
   
   
   @media screen and (max-width:280px){
+    .logo .textoLogo h2 {
+      font-size: 1.5em;
+      
+    }
     .logo .imgLogo h2 {
       
       margin:0px 0 0px 15px;
