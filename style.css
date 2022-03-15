@@ -243,17 +243,11 @@ header {
     margin: auto;
     font-size: 12px;
     font-weight: bold;
+    color: silver;
     
   }
-  .rodape span a {
-    color: black;
-    
-  }
-  .git {
-    display: flex;
-    margin:auto;
-  }
-
+  
+  
   
   
   @media screen and (max-width:375px){
