@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 header {
-  
+  background-color: #194e1d;
   min-height: 191px;
 }
 .container {
@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  
+  border-top-left-radius: 20px;
   min-height: 128px;
   background-color: #19811a;
 }
@@ -105,6 +105,7 @@ header {
   flex-direction: row;
   justify-content:center;
   align-items: center;
+  background-color: #194e1d;
   
 }
 
@@ -124,7 +125,7 @@ header {
 }
 
 .medidas {
-  background-color:white;
+  background-color:#194e1d;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -147,7 +148,7 @@ header {
   margin: 15px;
 }
 .tempo {
-  background-color:white;
+  background-color:#194e1d;
   min-width: 352px;
   justify-content: space-between;
   
@@ -222,17 +223,20 @@ header {
     font-weight: bold;
     color: #000;
   }
-  .caixaajuda img {
+  .caixaajuda .imgPix {
     width: 50px;
     height: 50px;
     
+  }
+  .imgTuto {
+    width: 100px;
   }
   .rodape {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-height: 35px;
-    margin-top: 20px;
+    max-height: 55px;
+    /* margin-top: 20px; */
     background-color: #33ed4e;
   }
   .rodape span {
