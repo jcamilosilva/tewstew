@@ -79,7 +79,7 @@
           <div class="geral">
             <div data-id="1" class="medidas mostrar">
               <article class="conversor">
-                <h2>Comprimento</h2>
+                <h2>Converter comprimento</h2>
                 <label>Valor</label>
                   <input id="entradaComprimento"type="number" value="1">
                   <label>De</label>
@@ -112,7 +112,7 @@
                 <p id="resultadoComprimento"></p> 
               </article>
               <article class="conversor">
-                <h2>Temperatura</h2>
+                <h2>Converter temperatura</h2>
                 <label>Valor</label>
                 <input id="entradaTemperatura" type="number" value="1">
                 <label>De</label>
@@ -134,78 +134,73 @@
                 
                 <p id="resultadoTemperatura"></p> 
               </article>
-              <!-- <article class="conversor">
-                <h2>Área</h2>
-                <div class="medida">
-                <label>Valor</label>
-                <input type="number" value="1">
-                </div>
-                <div class="medida">
-                  <label>De</label>
-                  <select>
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
-                  </select>
-                </div>
-                <div class="medida">
-                  <label>Para</label>
-                  <select>
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
-                  </select> 
-                </div>
-                <p>10</p> 
-              </article>
               <article class="conversor">
-                <h2>Velocidade</h2>
-                <div class="medida">
-                  <label>Valor</label>
-                  <input type="number" value="1">
-                </div>
-                <div class="medida">
+                <h2>Converter área</h2>
+                
+                <label>Valor</label>
+                <input id="entradaArea" type="number" value="1">
+                
                   <label>De</label>
-                  <select>
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
+                  <select id="select1Area">
+                    <option value="mm2">Milímetro Quadrado (mm2)</option>
+                    <option value="cm2">Centímetro Quadrado (cm2)</option>
+                    <option value="m2">Metro Quadrado (m2)</option>
+                    <option value="ha">Hectare (ha)</option>
+                    <option value="km2">Quilômetro Quadrado (km2)</option>
+                    <option value="in2">Polegada Quadrada (in2)</option>
+                    <option value="yd2">Jarda Quadrada (yd2)</option>
+                    <option value="ft2">Pé Quadrado (ft2)</option>
+                    <option value="ac">Acre (ac)</option>
+                    <option value="mi2">Milha Quadrada (mi2)</option>
                   </select>
-                </div>
-                <div class="medida">
+                
+                
                   <label>Para</label>
-                  <select>
-                    <option value="mm">Milímetro (mm)</option>
-                    <option value="cm">Centímetro (cm)</option>
-                    <option value="m">Metro (m)</option>
-                    <option value="km">Quilômetro (km)</option>
-                    <option value="in">Polegada (in)</option>
-                    <option value="yd">Jarda (yd)</option>
-                    <option value="ft-us">Pé - Us (ft-us)</option>
-                    <option value="ft">Pé (ft)</option>
-                    <option value="mi">Milha (mi)</option>
+                  <select id="select2Area">
+                    <option value="mm2">Milímetro Quadrado (mm2)</option>
+                    <option value="cm2">Centímetro Quadrado (cm2)</option>
+                    <option value="m2">Metro Quadrado (m2)</option>
+                    <option value="ha">Hectare (ha)</option>
+                    <option value="km2">Quilômetro Quadrado (km2)</option>
+                    <option value="in2">Polegada Quadrada (in2)</option>
+                    <option value="yd2">Jarda Quadrada (yd2)</option>
+                    <option value="ft2">Pé Quadrado (ft2)</option>
+                    <option value="ac">Acre (ac)</option>
+                    <option value="mi2">Milha Quadrada (mi2)</option>
                   </select> 
-                </div>
-                <p>1.609344</p> 
+                
+                <p id="resultadoArea"></p> 
+              </article> 
+              <article class="conversor">
+                <h2>Converter velocidade</h2>
+                
+                  <label>Valor</label>
+                  <input id="entradaVelocidade" type="number" value="1">
+                
+                
+                  <label>De</label>
+                  <select id="select1Velocidade">
+                    <option value="m/s">Metro por Segundo (m/s)</option>
+                    <option value="km/h">Quilômetro por Hora (km/h)</option>
+                    <option value="m/h">Milha por Hora (m/h)</option>
+                    <option value="knot">Nó (knot)</option>
+                    <option value="ft/s">Pé por Segundo (ft/s)</option>
+                  </select>
+                
+                
+                  <label>Para</label>
+                  <select id="select2Velocidade">
+                    <option value="m/s">Metro por Segundo (m/s)</option>
+                    <option value="km/h">Quilômetro por Hora (km/h)</option>
+                    <option value="m/h">Milha por Hora (m/h)</option>
+                    <option value="knot">Nó (knot)</option>
+                    <option value="ft/s">Pé por Segundo (ft/s)</option>
+                  </select> 
+                
+                <p id="resultadoVelocidade"></p> 
+              
               </article>
+              <!--
               <article class="conversor">
                 <h2>Volume</h2>
                 <div class="medida">
@@ -447,6 +442,8 @@
             
       </div>
       </footer>
+      <script src="js/velocidade.js"></script>
+      <script src="js/area.js"></script>
       <script src="js/tempo.js"></script>
       <script src="js/watt.js"></script>
       <script src="js/menu.js"></script>
