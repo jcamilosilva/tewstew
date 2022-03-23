@@ -13,7 +13,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 header {
-  background-color: #194e1d;
+  background-color: #ebebeb;
   
 }
 
@@ -27,8 +27,9 @@ header {
   justify-content: center;
   align-items: center;
   border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   min-height: 128px;
-  background-color: #19811a;
+  background-color: #5a991b;
 }
 .textoLogo {
   text-align: center; 
@@ -52,7 +53,7 @@ header {
   justify-content: space-around;
   width: 100%;
   min-height: 63px;
-  background-color: #33ed4e;
+  background-color: #ebebeb;
   border-bottom-right-radius: 20px;
 }
 
@@ -100,7 +101,7 @@ header {
   flex-direction: row;
   justify-content:center;
   align-items: center;
-  background-color: #194e1d;
+  background-color: #ebebeb;
   
 }
 
@@ -120,7 +121,7 @@ header {
 }
 
 .medidas {
-  background-color:#194e1d;
+  background-color:#ebebeb;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -132,7 +133,7 @@ header {
   width:30%;
   height: 600px;
   border-radius: 20px;
-  background-color: #ebebeb;
+  background-color: #999999;
   
 }
 .conversor h3 {
@@ -181,14 +182,19 @@ header {
     font-size:1.5em;
     font-weight: bold;
   }
+  .conversor ul li{
+    margin-left: 5%;
+    font-size:1em;
+    font-weight: bold;
+  }
 
   .centro {
-    background-color:#194e1d;
+    background-color:#ebebeb;
     align-items: center;
     justify-content: center;
   }
   .tempo {
-    background-color:#194e1d;
+    background-color:#ebebeb;
     align-items: center;
     justify-content: center;
   }
@@ -198,7 +204,7 @@ header {
   width:100%;
   height: 600px;
   border-radius: 20px;
-  background-color: #ebebeb;
+  background-color: #999999;
   }
   .conversorCentro h3 {
     padding: 13px;
@@ -258,13 +264,13 @@ header {
     width: 100%;
     height: 55px;
     /* margin-top: 20px; */
-    background-color: #194e1d;
+    background-color: #ebebeb;
   }
   .rodape span {
     margin: auto;
     font-size: 12px;
     font-weight: bold;
-    color: silver;
+    color: #3a3a3a;
     
   }
   
