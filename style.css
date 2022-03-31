@@ -189,6 +189,13 @@ header {
   }
 
   .centro {
+    width: 30%;
+    background-color:#ebebeb;
+    align-items: center;
+    justify-content: center;
+  }
+  .centro-privacy{
+    width: 80%;
     background-color:#ebebeb;
     align-items: center;
     justify-content: center;
