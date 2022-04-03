@@ -322,6 +322,19 @@ header {
     
   }
 
+  .voltar-home {
+    display: flex;
+    width: 100%;
+    padding: 25%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .voltar-home a {
+    color: #ebebeb;
+  }
+
   
   @media screen and (max-width:375px){
     .centro {
