@@ -207,7 +207,9 @@ header {
     justify-content: center;
   }
   .conversorCentro {
-    display: flex;
+    
+    flex-direction: column;
+    
     justify-content: center;
     margin: 5px 0 0 0 ;
     width:90%;
